@@ -1,7 +1,7 @@
 FROM node:alpine
-LABEL maintainer="christian.weiss@ffhamm.de"
+LABEL maintainer="guglielmo@openpolis.it"
 
-RUN npm install --no-cache -g mapshaper@0.4.152
+RUN npm install --no-cache -g mapshaper@0.6.29
 
 WORKDIR /data
 ENTRYPOINT ["/usr/local/bin/mapshaper"]
